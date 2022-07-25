@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- <base href="/"> -->
 
-<head>
+        <title><!--#echo var="title" --></title>
+        <meta name="description" content="Startup HTML template OptimizedHTML 5" />
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
 
-	<title><!--#echo var="title" --></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+        <link rel="icon" href="images/favicon.png" />
+        <meta property="og:image" content="images/dist/preview.jpg" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/app.min.css" />
+    </head>
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/app.min.css">
-
-</head>
-
-<body>
+    <body>
+        <header class="header">
+            <div class="login-nav__wrapper">
+                <div class="container container-flex">
+                    <nav class="login-menu">
+                        <ul class="login-menu__list">
+                            <li class="nav-link">
+                                <a href="#" class="login-menu__link">Log in</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#" class="login-menu__link active">try it for free</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-nav__wrapper">
+                <div class="container container-flex">
+                    <div class="logo__wrapper">
+                        <a class="logo__link">
+                            <img src="../images/dist/logo.svg" alt="logo" class="logo__img" />
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="nav-link">
+                                <a href="../news.html" class="main-nav__link">product</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#" class="main-nav__link">about us</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#" class="main-nav__link">pricing</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#" class="main-nav__link">resources</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#" class="main-nav__link">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

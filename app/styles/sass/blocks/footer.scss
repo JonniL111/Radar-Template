@@ -1,0 +1,33 @@
+.section-footer{
+    padding-bottom: calc($gutter / 2);
+}
+
+.footer-nav{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap:$gutter;
+    &__col-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__logo-link{
+        width: fit-content;
+    }
+    &__col-2{
+        .caption{
+            color: $light
+        }
+    }
+    &__menu-wrapper{
+        margin-top: $gutter;
+    }
+}
+.footer-copirate{
+    font-size: 0.7em;
+    color: $light;
+    display: flex;
+    margin-top: calc($gutter * 4);
+    justify-content: space-between;
+}

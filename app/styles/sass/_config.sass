@@ -1,21 +1,30 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
-$lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$dark: #000
+$light: #fff
+$dark-gray: #0d0d0d
+$radar-blue: #401be2
+$dark-blue: #09012e
+$light-gray: #f7f7f7
+$radar-green: #92fd51
+
+$fontsize: 18px // Body Font Size
+$textcolor: $dark-gray // Text Color
+$lineheight: 150% // Document Line Height
+$userfont: ibmplex, sans-serif // User Font Family
+$condensefont: condense, sans-serif
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
+$divider: 1px solid $dark-gray
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px
+$grid-gutter-width: 32px
 $gutter: $grid-gutter-width
 
 // IMPORT SECTION
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+//@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
@@ -27,18 +36,27 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('ibmplex', normal, 400, '../fonts/IBMPlexSans.woff2')
+@include font('ibmplex', italic, 400, '../fonts/IBMPlexSans-Italic.woff2')
+@include font('ibmplex', normal, 500, '../fonts/IBMPlexSans-Medium.woff2')
+@include font('ibmplex', italic, 500, '../fonts/IBMPlexSans-MediumItalic.woff2')
+@include font('ibmplex', normal, 600, '../fonts/IBMPlexSans-SemiBold.woff2')
+@include font('ibmplex', italic, 600, '../fonts/IBMPlexSans-SemiBoldItalic.woff2')
+
+@include font('condense', normal, 200, '../fonts/IBMPlexSansCondensed-ExtraLight.woff2')
+@include font('condense', normal, 300, '../fonts/IBMPlexSansCondensed-Light.woff2')
+@include font('condense', normal, 400, '../fonts/IBMPlexSansCondensed-Regular.woff2')
+@include font('condense', normal, 500, '../fonts/IBMPlexSansCondensed-Medium.woff2')
+@include font('condense', normal, 600, '../fonts/IBMPlexSansCondensed-SemiBold.woff2')
+@include font('condense', normal, 700, '../fonts/IBMPlexSansCondensed-Bold.woff2')
 
 // GENERAL CSS SETTINGS
 
 ::placeholder
-	color: #666
+	color: $dark-gray
 
 ::selection
-	background-color: $accent
+	background-color: $radar-blue
 	color: #fff
 
 input, textarea
@@ -53,6 +71,37 @@ body
 	font-size: $fontsize
 	line-height: $lineheight
 	color: $textcolor
-	min-width: 320px
+	min-width: 382px
 	position: relative
 	overflow-x: hidden
+
+a
+	text-decoration: none
+
+li
+	list-style: none
+
+h1, h2, h3, h4, h5, h6
+	margin: 0,
+	font-family: $condensefont
+
+.body
+	color: $dark-blue
+
+.body-small
+	font-size: 15px
+	color: $dark-blue
+
+.mt
+	margin-top: calc($gutter / 2)
+.mb
+	margin-bottom: calc($gutter / 2)
+
+.mt1
+	margin-top: $gutter
+
+.mt2
+	margin-top: calc($gutter * 2)
+
+.mb1
+	margin-bottom: $gutter

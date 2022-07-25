@@ -1,0 +1,59 @@
+.nav-link {
+    font-size: 0.77em;
+    letter-spacing: 0.5px;
+    a {
+        color: $dark;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &.current-menu-item {
+        color: $radar-blue;
+    }
+}
+
+.login-menu {
+    margin-left: auto;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        padding: 0 $gutter;
+    }
+    li + li {
+        border-left: $divider;
+    }
+}
+
+.main-nav {
+    padding-right: 45px;
+    font-weight: 500;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 12px 0 0 0;
+    }
+    li {
+        display: inline-block;
+        margin-left: $gutter;
+        font-weight: 500;
+    }
+    &__news{
+        ul{
+            padding: 0;
+        }
+        li{
+            transform: translateY(1px);
+            padding: 16px 0;
+            & a{
+                color: $dark-gray;
+            }
+        }
+        & .active {
+            border-bottom: 2px solid $radar-blue;
+        }
+    }
+}

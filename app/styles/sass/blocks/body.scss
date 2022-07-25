@@ -1,0 +1,118 @@
+.section-radar {
+    &__inner {
+        display: flex;
+        gap: $gutter;
+    }
+    &__left {
+        min-width: 760px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: flex-end;
+        gap: $gutter;
+    }
+    &__control {
+        margin-top: calc($gutter);
+    }
+}
+
+.section-video {
+    background-color: #ccc;
+    min-height: 100px;
+}
+
+.section-text{
+    &__inner{
+        margin-top: calc($gutter * 3.5);
+    }
+}
+
+.note-block {
+    color: $dark-gray;
+    max-width: 864px;
+    margin-left: auto;
+    margin-top: calc($gutter * 2);
+    &__item{
+        margin-right: $gutter;
+    }
+    &__row{
+        margin-bottom: $gutter;
+        padding-top:  $gutter;
+        gap: $gutter;
+        display: flex;
+    }
+    &__row + &__row{
+        border-top: $divider;
+    }
+}
+
+.benefit-block{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gutter;
+    grid-template-rows: auto;
+}
+
+.summ-block{
+    padding: $gutter;
+    background-color: #fff;
+    &__title{
+        margin-bottom: calc($gutter / 2);
+    }
+    &__count{
+        margin-bottom: calc($gutter / 2);
+        text-align: right;
+    }
+}
+
+.banner-1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 10px;
+    &__text{
+        max-width: 810px;
+    }
+}
+
+.partners{
+    &__table{
+        margin-top: calc($gutter * 3);
+    }
+}
+
+.review-item{
+    &__text{
+        line-height: 150%;
+    }
+    &__description{
+        margin-top: calc($gutter * 1.25);
+    }
+}
+
+.shortinfo{
+    &__text{
+        width: 50%;
+    }
+}
+
+.about{
+    &__wrapper{
+        display: flex;
+        gap:$gutter;
+        & > div{
+            flex: 1 1 200px;
+        }
+    }
+}
+
+.average{
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap:$gutter;
+    }
+}
